@@ -1,0 +1,90 @@
+page{
+    background-color: #f8f8f8;
+
+}
+#searchbar{
+    display: flex;
+}
+.in{
+    flex:2
+}
+#sf{
+    border-top: 10rpx solid #ccc;
+    padding: 30rpx;
+    border-bottom: 10rpx solid #ccc;
+    border-right: 5rpx solid #ccc;
+    border-radius: 5%;
+}
+.btn{
+    flex: 1;
+}
+#submit{
+    width: 98%;
+    height: 98%;
+    font-size: 1.5rem;
+    background-color: red;
+}
+#user-show{
+    border: 1rpx solid #ccc;
+    display: flex;
+    background-color: yellowgreen;
+}
+#avatar{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    border:1rpx solid rgb(155, 153, 153);
+    position: relative;
+    top:70rpx;
+}
+.table {
+    border: 0px solid darkgray;
+    margin-left: 30rpx;
+   }
+   .tr {
+    display: flex;
+    width: 600rpx;
+    justify-content: center;
+    height: 2.5rem;
+    align-items: center;
+   }
+   .td {
+    width:80%;
+    justify-content: center;
+    text-align: center;
+   }
+   .bg-w{
+    background: snow;
+   }
+   .bg-g{
+    background: #E6F3F9;
+   }
+   .th {
+    width: 100%;
+    justify-content: center;
+    background: orange;
+    color: #fff;
+    display: flex;
+    height: 2rem;
+    align-items: center;
+   }
+
+#add{
+    border: 1rpx solid black;
+    width: 80%;
+    height: 300rpx;
+    position: absolute;
+    background-color: white;
+    top: 350rpx;
+    left: 10%;
+    text-align: center;
+}
+.btn1 button{
+    width:60rpx;
+    margin-top: 25rpx;
+}
+#state{
+    text-align: center;
+    background-color: teal;
+    color: white;
+}

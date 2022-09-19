@@ -1,0 +1,42 @@
+<!--pages/other/other.wxml-->
+<view style="margin-bottom: 0rpx;" bindtap="toCircle">
+    <mp-icon type="field" icon="sticker" color="#86b0ff" size="25"/>
+    <text>朋友圈</text>
+    <text class="weui-badge" wx:if="{{haveData}}">New</text>
+</view>
+<view style="margin-bottom: 0rpx;" bindtap="reportCircle">
+    <mp-icon type="field" icon="transfer-text" color="#00FA9A" size="25"/>
+    <text>发表朋友圈</text>
+</view>
+
+<view bindtap="toMusic">
+    <mp-icon type="field" icon="music" color="#FF6347" size="25"/>
+    <text>我的背景音乐</text>
+
+</view>
+
+<view style="margin-bottom: 0rpx;" bindtap="toMap">
+    <mp-icon type="field" icon="discover" color="#fe6090" size="25"/>
+    <text>附近</text>
+</view>
+<view>
+    <mp-icon type="field" icon="qr-code" color="#a878ff" size="25"/>
+    <text>扫一扫</text>
+</view>
+<view bindtap="toVideo">
+    <mp-icon type="field" icon="tv" color="#fff47e" size="25"/>
+    <text>看一看</text>
+</view>
+<view  style="margin-bottom: 0rpx;">
+    <mp-icon type="field" icon="shop" color="#fda390" size="25"/>
+    <text>购物</text>
+</view>
+<view>
+    <mp-icon type="field" icon="pad" color="#FF4500" size="25"/>
+    <text>游戏</text>
+</view>
+<view>
+    <mp-icon type="field" icon="link" color="#86b0ff" size="25"/>
+    <text>小程序中的小程序（皮一下很开心~）</text>
+</view>
+<kugou-play/>

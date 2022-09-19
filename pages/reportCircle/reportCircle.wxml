@@ -1,0 +1,31 @@
+<!--pages/reportCircle/reportCircle.wxml-->
+<view class="tbtn">
+    发表文字
+    <button type="primary" size="mini" bindtap="sendMsg">发表</button>
+</view>
+<view class="ctt-view">
+    <textarea name="ctt" id="ctt" cols="90" rows="10" placeholder="这一刻的想法..." maxlength="200" focus  bindinput="getCtt">     
+    </textarea>
+</view>
+<view class="func">
+    <view style="border-top: 1rpx solid #F5F5F5;" bindtap="openMap">
+        <mp-icon icon="location"></mp-icon>
+        所在位置
+        <mp-icon icon="arrow" class="arrow" color="#F5F5F5"></mp-icon>
+    </view>
+    <view>
+        <mp-icon icon="at"></mp-icon>
+        提醒谁看
+        <mp-icon icon="arrow" class="arrow" color="#F5F5F5"></mp-icon>
+    </view>
+    <view>
+        <mp-icon icon="eyes-on"></mp-icon>
+        谁可以看
+        <mp-icon icon="arrow" class="arrow" color="#F5F5F5"></mp-icon>
+    </view>
+</view>
+
+<view style="position: absolute;bottom: 300rpx;" wx:if="{{show}}">
+    <text>当前选择位置：</text>
+    <text style="color: blue;">{{address}}</text>
+</view>

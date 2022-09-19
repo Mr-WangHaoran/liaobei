@@ -1,0 +1,81 @@
+<view id="avatar_view">
+    <image src="{{avatar_url}}" id="avatar" bindtap="uploadAvatar"/>
+    <text>{{username}}</text>
+</view>
+
+<view class="data_introd">
+    <view style="font-size: 1.5rem;border-bottom: 1rpx solid #f3f3f3;">
+        资料介绍   
+    </view>
+    <view class="showAll">
+        <view>
+            <view><text>用户名：</text></view>
+            <view> <input type="text" name="username" id="username" value="{{username}}"disabled="{{nameDisabled}}" class="{{!nameDisabled?'beYellow':''}}" bindblur="storage"/></view>
+            <view>
+                <button type="primary" bindtap="updateName">修改</button>
+            </view>      
+        </view>
+        <view>
+            <view><text>性别：</text></view>
+            <view> 
+                <radio-group bindchange="changeSex">
+                    <radio value="0" checked="{{sex==0}}">男</radio>
+                    <radio value="1" checked="{{sex==1}}">女</radio>
+                </radio-group>
+            </view>
+            <view>
+                <button type="primary" bindtap="updateSex">修改</button>
+            </view>      
+        </view>
+        <view>
+            <view><text>状态：</text></view>
+            <view> 
+               <picker mode="selector" range="{{states}}" value="0" bindchange="changeState">
+                    <view>{{states[index]}}</view>
+               </picker>
+            </view>     
+        </view>
+        <view>
+            <view><text>身高：</text></view>
+            <view> <input type="number" name="height" id="height" value="{{height}}"disabled="{{heightDisabled}}"class="{{!heightDisabled?'beYellow':''}}" bindblur="storage"/></view>
+            <view>
+                <button type="primary" bindtap="updateHeight">修改</button>
+            </view>      
+        </view>
+        <view>
+            <view><text>年龄：</text></view>
+            <view> <input type="number" name="age" id="age" value="{{age}}"disabled="{{ageDisabled}}"class="{{!ageDisabled?'beYellow':''}}" bindblur="storage"/></view>
+            <view>
+                <button type="primary" bindtap="updateAge">修改</button>
+            </view>      
+        </view>
+        <view>
+            <view><text>住址：</text></view>
+            <view> <input type="text" name="address" id="address" value="{{address}}" disabled="{{addressDisabled}}"class="{{!addressDisabled?'beYellow':''}}" bindblur="storage"/></view>
+            <view>
+                <button type="primary" bindtap="updateAddress">修改</button>
+            </view>      
+        </view>
+        <view>
+            <view><text>出生日期：</text></view>
+            <view> <input type="date" name="birth" id="birth" value="{{birth}}" disabled="{{birthDisabled}}"class="{{!birthDisabled?'beYellow':''}}" bindblur="storage"/></view>
+            <view>
+                <button type="primary" bindtap="updateBirth">修改</button>
+            </view>      
+        </view>
+    </view>
+</view>
+<view class="qianming_view">
+    <view style="font-size: 1.5rem;border-bottom: 1rpx solid #f3f3f3;">
+        个性签名
+    </view>
+    <view style="width: 750rpx; height: 272rpx; display: block; box-sizing: content-box; left: NaNrpx; top: NaNrpx">
+        <textarea name="qianming" id="qianming" cols="30" rows="10" value="{{QM}}" disabled="{{QmDisabled}}"class="{{!QmDisabled?'beYellow':''}}" bindblur="storage"></textarea>
+    </view>
+</view>
+<view style="position: relative;top: 100rpx;">
+    <button type="primary" style="position: relative;" bindtap="updateQM">修改个性签名</button>
+</view>
+<button style="position: relative; left: 0rpx; top: 125rpx;background-color: #f40;color: white;" type="warn" bindtap="logout">退出登录</button>
+
+

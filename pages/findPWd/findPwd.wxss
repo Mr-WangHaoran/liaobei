@@ -1,0 +1,22 @@
+/* pages/findPWd/findPwd.wxss */
+page{
+    background-color: #fec736;
+}
+
+.isHasUser,.updatePwd{
+    width: 100%;
+    height: 500rpx;
+    background-color: rgba(204, 204, 204, 0.514);
+    border: 1rpx solid black;
+    position: absolute;
+    top: 20%;
+}
+.isHasUser view,.updatePwd view{
+    padding: 50rpx;
+}
+#tel,#pwd{
+    border: 1rpx solid black;
+    padding: 10rpx;
+    background-color: white;
+}
+

@@ -1,0 +1,74 @@
+/* pages/login/login.wxss */
+page{
+    background: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fblog%2F202102%2F28%2F20210228173139_263ce.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643630502&t=65046828e17305a2df4c08ea6d84fea6");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+.logo{
+    width: 100%;
+    position: absolute;
+    top: 100rpx;
+    font-size: 6rem;
+    font-family:"宋体";
+    font-weight: bolder;
+    color:#D2691E;
+    animation-name: logoRotate;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
+
+@keyframes logoRotate{
+    0%{
+        color: #D2691E;
+        transform: rotateZ(0deg);
+    }50%{
+        color: green;
+        transform: rotateZ(720deg);
+    }100%{
+        color: #D2691E;
+        transform: rotateZ(0deg);
+    }
+}
+
+.logd{
+    position: relative;
+    width: 100%;
+    height: 300rpx;
+    top: 720rpx
+}
+.tips{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 1024rpx;
+    font-size: 0.9rem;
+}
+.wrapper{
+    position: relative;
+    top: 300rpx;
+}
+.wrapper_btn{
+    margin-top: 80rpx;
+}
+#loginForm label{
+    float: left;
+}
+#loginForm view{
+    padding: 25rpx;
+    border-bottom: 2rpx solid #ccc;
+    border-top: 2rpx solid #ccc;
+    background-color: rgba(255, 255, 255, 0.329);
+}
+#loginForm view button{
+    margin-top: 30rpx;
+    padding: 20rpx;
+}
+#reg{
+    color: rgb(78, 75, 75);
+    text-decoration: underline;
+    font-weight: 100;
+}

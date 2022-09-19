@@ -1,0 +1,99 @@
+{
+  "entryPagePath": "pages/login/login",
+  "pages": [
+    "pages/login/login",
+    "pages/search/search",
+    "pages/newFriend/newFriend",
+    "pages/reportCircle/reportCircle",
+    "pages/findPWd/findPwd",
+    "pages/authorize/authorize",
+    "pages/home/home",
+    "pages/register/register",
+    "pages/friends/friends",
+    "pages/circle/circle",
+    "pages/other/other",
+    "pages/me/me",
+    "pages/myData/myData",
+    "pages/chat/chat",
+    "pages/chat_many/chat_many"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#F4A460",
+    "navigationBarTitleText": "聊呗",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#1E90FF",
+    "backgroundColor": "#F5F5F5",
+    "borderStyle": "black",
+    "list":[
+      {
+        "pagePath":"pages/home/home",
+        "text":"聊呗",
+        "iconPath":"/images/chat.png",
+        "selectedIconPath":"/images/chat_after.png"
+      },
+      {
+        "pagePath":"pages/friends/friends",
+        "text":"通讯录",
+        "iconPath":"/images/friend.png",
+        "selectedIconPath":"/images/friend_after.png"
+      },
+     
+      {
+        "pagePath":"pages/other/other",
+        "text":"其他",
+        "iconPath":"/images/other.png",
+        "selectedIconPath":"/images/other_after.png"
+      },
+      {
+        "pagePath":"pages/me/me",
+        "text":"我的",
+        "iconPath":"/images/me.png",
+        "selectedIconPath":"/images/me_after.png"
+      }
+      
+    ]
+  },
+  "useExtendedLib": {
+    "weui":true
+  },
+  "plugins": {
+    "citySelector": {
+      "version": "1.0.1",
+      "provider": "wx63ffb7b7894e99ae"
+  },
+  "chooseLocation": {
+    "version": "1.0.9",
+    "provider": "wx76a9a06e5b4e693e"
+    },
+    "routePlan": {
+      "version": "1.0.19",
+      "provider": "wx50b5593e81dd937a"
+      },
+      "kugouPlayer": {
+        "version": "1.0.12",
+        "provider": "wx4f38007b839da9d3"
+      },
+      "player": {
+        "version": "2.0.0",
+        "provider": "wxa75efa648b60994b"
+     }
+  },
+  "permission": {
+    "scope.userLocation": {
+    "desc": "你的位置信息将用于小程序定位"
+    }
+  },
+  "usingComponents": {
+    "kugou-play": "plugin://kugouPlayer/kugou-play",
+    "player-component": "plugin://player/video"
+  },
+  "requiredBackgroundModes": ["audio","location"]
+}

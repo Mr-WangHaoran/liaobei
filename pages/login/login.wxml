@@ -1,0 +1,52 @@
+<view class="logo">
+  <text>聊呗</text>
+</view>
+
+<!-- 本机微信一键登录 -->
+<view class="logd" wx:if="{{switch}}">
+  <button type="primary" bindtap="wxLogin" style="position: relative; left: 0rpx; top: 193rpx">微信账号一键登录</button>
+  <view>
+    <label class="weui-agree">
+      <view class="weui-agree__text">
+      <icon type="{{icon_type}}" bindtap="switchState"></icon>
+          阅读并同意<navigator url="null" class="weui-agree__link">《相关条款》</navigator>
+      </view>
+    </label>
+  </view>
+</view>
+
+
+<!-- 表单登录 -->
+<view wx:if="{{!switch}}" class="we_form_wrap wrapper">
+  <form action="" method="post" id="loginForm" bindsubmit="formLogin">
+    <view>
+      <label for="telNumber">手机号码</label>
+      <input type="tel" name="telNumber" id="telNumber" placeholder="请输入手机号" focus="true" maxlength="11" bindinput="telNumberValidate" value="{{telNumber}}"/>
+    </view>
+    <view>
+      <label for="password">手机号码</label>
+      <input type="password" name="password" id="password" placeholder="请输入密码" maxlength="16"/>
+    </view>
+    <view>
+      <label>记住我？</label>
+      <checkbox-group bindchange="isRememberMe">
+        <checkbox value="rem">【三天内有效】</checkbox>
+      </checkbox-group>
+    </view>
+    <view style="font-size: 0.9rem;font-weight: bolder;background-color:yellow;">
+      <icon type="warn"></icon>
+      还莫得账号？愣着干嘛啊，<text id="reg" bindtap="toRegister">点我注册</text>
+    </view>
+    <view style="height: 10rpx;line-height: 10rpx;margin-bottom:-5rpx;background-color: turquoise;color: white;font-weight: bold;" bindtap="findPwd">找回密码</view>
+    <view>
+      <button form-type="submit" type="primary">登录</button>
+      <button form-type="reset" type="primary">重置</button>
+    </view>
+  </form>
+</view>
+
+
+<view class="tips">
+  <icon type="info"></icon>
+    切换为：<text style="color: rgb(121, 114, 114);text-decoration: underline;" bindtap="switchLogin">{{login_data}}</text> 
+</view>

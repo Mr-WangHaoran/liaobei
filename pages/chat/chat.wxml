@@ -1,0 +1,24 @@
+<view class="show">
+
+</view>
+<view class="chat-tab">
+    <view>
+        <mp-icon icon="voice" size="30"></mp-icon>
+    </view>
+    <view style="flex: 5;" class="data">
+        <input type="text" name="data" id="data" maxlength="100"/>
+    </view>
+    <view class="btn">
+        <button type="primary" bindtap="sendMsg">发送</button>
+    </view>
+    <view> 
+        <mp-icon icon="sticker" size="30" ></mp-icon></view>
+    <view>
+        <mp-icon icon="add2" size="30" ></mp-icon>
+    </view>
+    
+    
+   
+    
+    
+</view>

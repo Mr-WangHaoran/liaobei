@@ -1,0 +1,34 @@
+<view id="searchbar">
+    <view class="in">
+        <input type="text" placeholder="🔍搜索好友的手机号" id="sf" name="sf" maxlength="11" bindblur="getTelNumber"/>
+    </view>
+    <view class="btn">
+        <button type="primary" id="submit" bindtap="searchFriend">提交</button>
+    </view>
+</view>
+
+
+<view id="user-show" wx:if="{{show}}" bindtap="addFriend">
+    <image src="{{avatar}}" id="avatar" mode="aspectFit"></image>
+    <view class="table">
+     <view class="tr bg-w">
+         <view class="th">用户名</view>
+         <view class="th">性别</view>
+         <view class="th ">手机号</view>
+     </view>
+     <view class="tr bg-g">
+         <view class="td">{{username}}</view>
+         <view class="td">{{sex=='1'?'女':'男'}}</view>
+         <view class="td">{{phone}}</view>
+     </view>
+    </view>  
+</view>
+<view id="state" style="background-color: {{bgColor}};" wx:if="{{show}}">状态：<text>{{tip}}</text></view>
+
+
+<view id="add" wx:if="{{showAdd && send}}">
+    <view>是否要添加【<text style="color: #f40">{{username}}</text>】为好友？</view>
+    <view class="btn1">
+        <button type="primary" bindtap="yes">是的</button><button type="primary" bindtap="cancle">取消</button>
+    </view>
+</view>

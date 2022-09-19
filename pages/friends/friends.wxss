@@ -1,0 +1,32 @@
+Page{
+    background-color: #ededed;
+}
+
+.func view,.friends view,.friend_group view{
+    width: 100%;
+    height: 120rpx;
+    border: 1rpx solid #ededed;
+    background-color: white;
+    font-size: 1rem;
+}
+.func view{
+    text-align: center;
+    line-height: 120rpx;
+} 
+.friends .title,.friend_group .title{
+    background-color: #ededed;
+    height: 50rpx;
+    line-height: 50rpx;
+    font-size: 1rem;
+}  
+.friends .f image,.friend_group .fg image{
+    width: 110rpx;
+    height: 110rpx;
+    border: 1rpx solid #ededed;
+    border-radius: 50%;
+}
+.friends .f text,.friend_group .fg text{
+    position: relative;
+    top: -40rpx;
+    left: 30rpx;
+}

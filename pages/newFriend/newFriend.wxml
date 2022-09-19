@@ -1,0 +1,18 @@
+<view id="user-show" bindtap="addFriend">
+    <image src="{{avatar}}" id="avatar" mode="aspectFit"></image>
+    <view class="table">
+     <view class="tr bg-w">
+         <view class="th">用户名</view>
+         <view class="th">性别</view>
+         <view class="th ">手机号</view>
+     </view>
+     <view class="tr bg-g">
+         <view class="td">{{username}}</view>
+         <view class="td">{{sex=='1'?'女':'男'}}</view>
+         <view class="td">{{phone}}</view>
+     </view>
+    </view>
+</view>
+<view class="tips">当前用户请求添加你为好友</view>
+<button type="primary" bindtap="ok">同意</button>
+<button type="primary" bindtap="no">拒绝</button>

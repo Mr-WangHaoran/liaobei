@@ -1,0 +1,19 @@
+<view class="isHasUser" wx:if="{{!userExist}}">
+    <view>请输入注册时手机号</view>
+    <view>
+        <text style="background-color: tomato;color: white;">手机号：</text> <input type="number" maxlength="11" name="tel" id="tel" bindinput="getTel"/>
+    </view>
+    <view>
+        <button type="primary" bindtap="findUser">提交</button>
+    </view>
+</view>
+
+<view class="updatePwd" wx:if="{{userExist}}">
+    <view>请输入新密码</view>
+    <view>
+        <text style="background-color: tomato;color: white;">新密码：</text> <input type="password" maxlength="11" name="pwd" id="pwd" bindinput="getPwd"/>
+    </view>
+    <view>
+        <button type="primary" bindtap="updatePwd">提交</button>
+    </view>
+</view>

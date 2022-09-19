@@ -1,0 +1,42 @@
+<!--pages/home/home.wxml-->
+<view class="item" bindtap="toChat">
+    <image src="https://img1.baidu.com/it/u=1994859516,3472573535&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=400"></image>
+    <text>我是小明</text>
+    <text class="date">1月1日</text>
+</view>
+<view class="item" bindtap="toChat">
+    <image src="https://img1.baidu.com/it/u=2114684366,854047881&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image>
+    <text>大佬</text>
+    <text class="date">1月2日</text>
+</view>
+<view class="item" bindtap="toChat">
+    <image src="https://img2.baidu.com/it/u=1815374696,2704028021&fm=253&fmt=auto&app=120&f=JPEG?w=750&h=750"></image>
+    <text>花和尚</text>
+    <text class="date">12月1日</text>
+</view>
+<view class="item" bindtap="toChat">
+    <image src="https://img1.baidu.com/it/u=1190651332,3402773154&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=400"></image>
+    <text>人云亦云</text>
+    <text class="date">12月26日</text>
+</view>
+<view class="item" bindtap="toChat">
+    <image src="https://img2.baidu.com/it/u=4284492163,2611934395&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image>
+    <text>对比下来</text>
+    <text class="date">3月28日</text>
+</view>
+<view class="item" bindtap="toChat">
+    <image src="https://img1.baidu.com/it/u=1925715390,133119052&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=400"></image>
+    <text>小亮</text>
+    <text class="date">1月1日</text>
+</view>
+<view class="item" bindtap="toChat">
+    <image src="https://img2.baidu.com/it/u=3804069081,3968854353&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image>
+    <text>111</text>
+    <text class="date">1月1日</text>
+</view>
+<view class="item" bindtap="toChat">
+    <image src="https://img0.baidu.com/it/u=3814492002,1415811154&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=400"></image>
+    <text>*</text>
+    <text class="date">1月1日</text>
+</view>
+<view class="item"></view>

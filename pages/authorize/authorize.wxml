@@ -1,0 +1,16 @@
+<view wx:if="{{canIUse}}">
+    <view class="header">
+        <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201412%2F23%2F20141223071138_j4NMw.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643935904&t=229905f15be6ef6d03d3c2c64fbb6c78"></image>
+    </view>
+
+    <view class="content">
+        <view>申请获取以下权限</view>
+        <text>获得你的公开信息（昵称、头像等）</text>
+    </view>
+
+    <button class="bottom" type="primary" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+        授权登录
+    </button>
+</view>
+
+<view wx:else>请升级微信版本</view>

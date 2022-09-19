@@ -1,0 +1,96 @@
+/* pages/me/me.wxss */
+Page{
+    background-color: #f8f8f8;
+}
+.show-data{
+    flex-direction: row;
+    margin-bottom: 30rpx;
+}
+.show-data .avatar{
+    background-color: #ffffff;
+    height:120rpx;
+    width: 100%;
+    margin-top: 30rpx;
+}
+.show-data .data{
+    display: flex;
+    width: 100%;
+    height: 80rpx;
+    width: 750rpx; 
+    height: 120rpx; 
+    display: flex; 
+    box-sizing: border-box; 
+    left: NaNrpx; 
+    top: NaNrpx
+}
+.show-data .data .data1{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 120rpx;
+    border:5rpx solid #f3f3f3 ;
+    background-color: #fff;
+    text-align: center;
+}
+.show-data .data .data1 view{
+    height: 50%;
+}
+.show-data .avatar{
+    display: flex;
+}
+.avatar_view{
+    width: 131rpx;
+    height: 127rpx; 
+    display: block; 
+    box-sizing: border-box; 
+    left: NaNrpx; 
+    top: NaNrpx;
+    border-radius: 50%;
+    border: 1rpx solid #f3f3f3;
+}
+.gender_view image{
+    width: 64rpx; 
+    height: 54rpx; 
+    display: block; 
+    box-sizing: border-box;
+}
+.avatar_view image{
+    width: 131rpx;
+    height: 127rpx; 
+    display: inline-block; 
+    box-sizing: border-box; 
+    border-radius: 50%;
+}
+.ziliao text{
+    position: relative; 
+    top: 36rpx;
+    color:#ccc;
+}
+
+.avatar view{
+    border-top:1rpx solid #f3f3f3;
+}
+.func1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50rpx;
+}
+.func1 view{
+    background-color: white;
+    border: 1px solid #f3f3f3;
+    padding: 5rpx;
+    position: relative;
+    height: 60rpx;
+    top: 4rpx;
+    width: 100%;
+}
+.func1 view mp-icon{
+    position: relative; 
+    top: -5rpx;
+}
+.func1 view text{
+    position: relative;
+    left: 26rpx;
+    top: 5rpx;
+}

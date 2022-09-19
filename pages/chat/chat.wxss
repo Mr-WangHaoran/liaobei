@@ -1,0 +1,22 @@
+/* pages/chat/chat.wxss */
+.chat-tab{
+    position: fixed;
+    bottom: 0rpx;
+    width: 100%;
+    height: 100rpx;
+    border-top:1rpx solid #ededed;
+    background-color: #f3f3f3;
+    padding: 20rpx;
+    display: flex;
+}
+.chat-tab view{
+    flex: 1;
+}
+.chat-tab .btn button{
+    width: 130rpx; height: 70rpx; display: block; box-sizing: border-box;font-size: 0.5rem;
+    padding: 1rpx;line-height:70rpx ;
+}
+.chat-tab .data{
+    border: 1rpx solid #ccc;
+    height: 60rpx;
+}

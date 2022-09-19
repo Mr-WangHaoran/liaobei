@@ -1,0 +1,32 @@
+<!--pages/circle/circle.wxml-->
+<wxs src="/wxs/timeFormat.wxs" module="tools"></wxs>
+<view class="bigImg">
+    <view class="img1">
+        <image src="https://img0.baidu.com/it/u=3451109178,1218512092&fm=26&fmt=auto" mode="scaleToFill"></image>
+    </view>
+    <view class="avatar">
+        <text>{{username}}</text>
+        <image src="{{avatar}}" mode="scaleToFill" style="border-radius: 50%;"></image>
+    </view>
+</view>
+
+
+<block wx:for="{{wechats}}" wx:key="*this">
+    <view class="content-box">
+    <view class="avatar-send">
+        <image src="{{item.avatar}}" mode="scaleToFill" style="border-radius: 50%;"></image>
+    </view>
+    <view class="uname">{{item.username}}</view>
+    <view class="content"> 
+        <view>{{item.content}}</view>
+        <view class="date">
+            <text>时间：</text> {{tools.dateFormat(item.date)}}
+        </view>
+        <view class="address">
+            <text wx:if="{{item.address!=null}}">地点：<text style="color:blue;text-decoration: underline;">{{item.address}}</text> </text> 
+        </view>
+    </view>
+</view>
+</block>
+
+

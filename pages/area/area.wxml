@@ -1,0 +1,2 @@
+<!--pages/area/area.wxml-->
+<map name="" show-compass="true" markers="true"></map>

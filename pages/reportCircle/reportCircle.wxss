@@ -1,0 +1,29 @@
+/* pages/reportCircle/reportCircle.wxss */
+page{
+    width: 100%;
+}
+.tbtn{
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 50rpx;
+}
+.tbtn button{
+    display: inline-block;
+    position: relative;
+    left: 230rpx;
+    top: 20rpx;
+}
+.ctt-view{
+    margin-bottom: 50rpx;
+    margin-left: 50rpx;
+}
+.ctt{
+    width: 100%;
+}
+.func view{
+    border-bottom: 1rpx solid #F5F5F5;
+}
+.func .arrow{
+    margin-left: 400rpx;
+}

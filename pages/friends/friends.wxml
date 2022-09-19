@@ -1,0 +1,38 @@
+<mp-searchbar></mp-searchbar>
+
+<view class="func">
+    <view style="font-size: 1.3rem;" bindtap="toSearch"><mp-icon icon="search" color="black" size="30" type="field" color="#fed03c"></mp-icon>搜索朋友</view>
+    <view style="font-size: 1.3rem;"><mp-icon icon="time" color="black" size="30" type="field" color="#ff867e"></mp-icon>最近联系</view>
+    <view style="font-size: 1.3rem;" bindtap="newFriend"><mp-icon icon="me" color="black" size="30" type="field" color="#98FB98"></mp-icon>新的朋友<text class="weui-badge" wx:if="{{haveFriend}}">New</text></view>
+</view>
+<!-- 好友列表 -->
+<view class="friends">
+    <view class="title">好友列表</view>
+    <block wx:if="{{friends.length==0}}">
+        <view class="f">
+            <text style="display: inline-block;line-height: 100px;">你怎么还没好友啊，快去添加一些吧~</text>
+        </view>
+    </block>
+    <block wx:else>
+        <block wx:for="{{friends}}" wx:key="*this">
+        <view class="f">
+            <image src="{{item.avatar}}"></image>
+            <text>{{item.username}}</text>
+            <text>   状态:{{states[item.state]}}</text>
+        </view>
+    </block>
+    </block>
+    
+    
+</view>
+<!-- 群聊列表 -->
+<view class="friend_group">
+    <view class="title">群聊列表</view>
+    <view class="fg">
+        <image src="/images/me.png"></image>
+        <text>聊天群1</text>
+    </view>
+    <view></view>
+    <view></view>
+    <view></view>
+</view>
